@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strenth</title>
+
+    <style>
+        .password-strength{
+            width: 90vw;
+            padding: 15px;
+            margin-top:5px;
+            border-radius: 25px;
+        }
+
+        .strength-meter{
+            height: 10vh;
+            margin: 10px;
+        }
+
+        .very-weak{background-color: #ff0000;}
+        .weak{background-color: #ff8c11;}
+        .medium{background-color: #fbff00;}
+        .strong{background-color: #9dff00;}
+        .very-strong{background-color: #00ff1e;}
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <label for="password">Enter Your Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div class="password-strength">
+        <div class="strength-meter"></div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="strengthchecker.js"></script>
+</body>
+</html>
